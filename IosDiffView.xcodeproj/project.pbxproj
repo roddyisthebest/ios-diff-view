@@ -19,6 +19,10 @@
 		EC98849C2D7EE93A00224DAA /* IosDiffViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC98849B2D7EE93A00224DAA /* IosDiffViewTests.swift */; };
 		EC9884A62D7EE93A00224DAA /* IosDiffViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9884A52D7EE93A00224DAA /* IosDiffViewUITests.swift */; };
 		EC9884A82D7EE93A00224DAA /* IosDiffViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9884A72D7EE93A00224DAA /* IosDiffViewUITestsLaunchTests.swift */; };
+		ECD3DC4A2D8963EC00ED6E71 /* DiffCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC492D8963EC00ED6E71 /* DiffCode.swift */; };
+		ECD3DC4D2D89644600ED6E71 /* DiffUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC4C2D89644600ED6E71 /* DiffUsecase.swift */; };
+		ECD3DC502D89648900ED6E71 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC4F2D89648900ED6E71 /* UIColor.swift */; };
+		ECD3DC522D89652E00ED6E71 /* DiffUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		EC9884A12D7EE93A00224DAA /* IosDiffViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosDiffViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9884A52D7EE93A00224DAA /* IosDiffViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosDiffViewUITests.swift; sourceTree = "<group>"; };
 		EC9884A72D7EE93A00224DAA /* IosDiffViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosDiffViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECD3DC492D8963EC00ED6E71 /* DiffCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffCode.swift; sourceTree = "<group>"; };
+		ECD3DC4C2D89644600ED6E71 /* DiffUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffUsecase.swift; sourceTree = "<group>"; };
+		ECD3DC4F2D89648900ED6E71 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffUsecaseTests.swift; sourceTree = "<group>"; };
 		EDE61E9273679EB8C980979A /* Pods-IosDiffViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosDiffViewTests.debug.xcconfig"; path = "Target Support Files/Pods-IosDiffViewTests/Pods-IosDiffViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +109,6 @@
 				EDE61E9273679EB8C980979A /* Pods-IosDiffViewTests.debug.xcconfig */,
 				12802B9F73F9DBDFA64AED6E /* Pods-IosDiffViewTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,8 @@
 		EC9884832D7EE93900224DAA /* IosDiffView */ = {
 			isa = PBXGroup;
 			children = (
+				ECD3DC4E2D89647A00ED6E71 /* Extensions */,
+				ECD3DC472D8963CD00ED6E71 /* Domain */,
 				EC9884842D7EE93900224DAA /* AppDelegate.swift */,
 				EC9884862D7EE93900224DAA /* SceneDelegate.swift */,
 				EC9884882D7EE93900224DAA /* ViewController.swift */,
@@ -155,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				EC98849B2D7EE93A00224DAA /* IosDiffViewTests.swift */,
+				ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */,
 			);
 			path = IosDiffViewTests;
 			sourceTree = "<group>";
@@ -166,6 +176,39 @@
 				EC9884A72D7EE93A00224DAA /* IosDiffViewUITestsLaunchTests.swift */,
 			);
 			path = IosDiffViewUITests;
+			sourceTree = "<group>";
+		};
+		ECD3DC472D8963CD00ED6E71 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DC4B2D89643A00ED6E71 /* Usecases */,
+				ECD3DC482D8963E100ED6E71 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		ECD3DC482D8963E100ED6E71 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DC492D8963EC00ED6E71 /* DiffCode.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ECD3DC4B2D89643A00ED6E71 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DC4C2D89644600ED6E71 /* DiffUsecase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		ECD3DC4E2D89647A00ED6E71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DC4F2D89648900ED6E71 /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,8 +451,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9884892D7EE93900224DAA /* ViewController.swift in Sources */,
+				ECD3DC502D89648900ED6E71 /* UIColor.swift in Sources */,
+				ECD3DC4A2D8963EC00ED6E71 /* DiffCode.swift in Sources */,
 				EC9884852D7EE93900224DAA /* AppDelegate.swift in Sources */,
 				EC9884872D7EE93900224DAA /* SceneDelegate.swift in Sources */,
+				ECD3DC4D2D89644600ED6E71 /* DiffUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD3DC522D89652E00ED6E71 /* DiffUsecaseTests.swift in Sources */,
 				EC98849C2D7EE93A00224DAA /* IosDiffViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
