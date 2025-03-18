@@ -22,6 +22,7 @@
 		ECD3DC4A2D8963EC00ED6E71 /* DiffCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC492D8963EC00ED6E71 /* DiffCode.swift */; };
 		ECD3DC4D2D89644600ED6E71 /* DiffUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC4C2D89644600ED6E71 /* DiffUsecase.swift */; };
 		ECD3DC502D89648900ED6E71 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC4F2D89648900ED6E71 /* UIColor.swift */; };
+		ECD3DC522D89652E00ED6E71 /* DiffUsecaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		ECD3DC492D8963EC00ED6E71 /* DiffCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffCode.swift; sourceTree = "<group>"; };
 		ECD3DC4C2D89644600ED6E71 /* DiffUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffUsecase.swift; sourceTree = "<group>"; };
 		ECD3DC4F2D89648900ED6E71 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffUsecaseTests.swift; sourceTree = "<group>"; };
 		EDE61E9273679EB8C980979A /* Pods-IosDiffViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosDiffViewTests.debug.xcconfig"; path = "Target Support Files/Pods-IosDiffViewTests/Pods-IosDiffViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				EC98849B2D7EE93A00224DAA /* IosDiffViewTests.swift */,
+				ECD3DC512D89652E00ED6E71 /* DiffUsecaseTests.swift */,
 			);
 			path = IosDiffViewTests;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD3DC522D89652E00ED6E71 /* DiffUsecaseTests.swift in Sources */,
 				EC98849C2D7EE93A00224DAA /* IosDiffViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
